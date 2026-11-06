@@ -1,71 +1,127 @@
 <!doctype html>
 <html lang="pl">
 <head>
-  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#241811">
-  <meta name="description" content="Poznaj Freda — legendę IIILO.">
-  <title>Fred — mały świat wielkiej osobowości</title>
+  <meta name="theme-color" content="#2a1a10">
+  <meta name="description" content="Poznaj Freda - legendę IIILO w Koninie. Nieskończona galeria, podróże, osiągnięcia i już wkrótce darmowe lekcje z Fredem.">
+  <meta property="og:title" content="Fred - mały świat wielkiej osobowości">
+  <meta property="og:description" content="Legenda IIILO. Poznaj Freda - pluszową wydrę o niezwykłym charakterze. Wkrótce darmowe lekcje z Fredem.">
+  <meta property="og:type" content="website">
+  <title>Fred - mały świat wielkiej osobowości</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,500;1,9..144,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="fred-1.jpg">
   <script src="script.js" defer></script>
 </head>
 <body>
+
   <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
     <symbol id="i-ne" viewBox="0 0 24 24"><path d="M6 18 18 6M8 6h10v10" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v16M5.5 13.5 12 20l6.5-6.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 20V4M5.5 10.5 12 4l6.5 6.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     <symbol id="i-right" viewBox="0 0 24 24"><path d="M4 12h16M13.5 5.5 20 12l-6.5 6.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="M20 12H4M10.5 5.5 4 12l6.5 6.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2v20M2 12h20M5 5l14 14M19 5 5 19" fill="none" stroke="currentColor" stroke-linecap="round"/></symbol>
     <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2.5 2.9 6.1 6.6.8-4.9 4.6 1.3 6.6-5.9-3.3-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z" fill="currentColor"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.5 7-13a7 7 0 1 0-14 0c0 6.5 7 13 7 13z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="9" r="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-plane" viewBox="0 0 24 24"><path d="m3 13 18-9-5 18-3-8-10-1z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 11 9-8 9 8v10h-6v-6h-6v6H3z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M3 12h18M12 3c3 3.5 3 14 0 18-3-4-3-14.5 0-18z" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.5" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-infinity" viewBox="0 0 24 24"><path d="M6.5 9a3 3 0 0 1 0 6c-1.7 0-3-1.3-3-3s1.3-3 3-3c2.5 0 3.5 3 5.5 3s3-3 5.5-3c1.7 0 3 1.3 3 3s-1.3 3-3 3a3 3 0 0 1 0-6c-2.5 0-3.5 3-5.5 3s-3-3-5.5-3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2zM8 3v18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0 1 12 0v5l2 3H4zM10 22h4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9C.5 8 2 4 6 4c2 0 3.5 1 4.5 2.5C11.5 5 13 4 15 4c4 0 5.5 4 3.5 8C19 16.5 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
   </svg>
+
   <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="progress-bar" aria-hidden="true"><div class="progress-fill" id="progressFill"></div></div>
+
   <header class="site-header">
-    <a class="brand" href="#start" aria-label="Fred — strona główna"><span class="brand-mark">F</span><span>fred<span class="brand-dot">.</span></span></a>
-    <button class="menu-toggle" aria-label="Otwórz menu" aria-expanded="false"><span></span><span></span></button>
-    <nav class="navigation" aria-label="Menu główne">
+    <a class="brand" href="#start" aria-label="Fred - strona główna">
+      <span class="brand-mark">F</span>
+      <span class="brand-text">fred<span class="brand-dot">.</span></span>
+    </a>
+    <button class="menu-toggle" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mainNav"><span></span><span></span></button>
+    <nav class="navigation" id="mainNav" aria-label="Menu główne">
       <a href="#o-fredzie">O Fredzie</a>
       <a href="#galeria">Galeria</a>
       <a href="#ciekawostki">Ciekawostki</a>
+      <a href="#osiagniecia">Osiągnięcia</a>
+      <a href="#podroze">Podróże</a>
+      <a href="#lekcje">Lekcje</a>
+      <a href="#faq">FAQ</a>
     </nav>
-    <a class="header-cta" href="#galeria">Zobacz zdjęcia <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></span></a>
+    <a class="header-cta" href="#lekcje">Lekcje z Fredem <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></span></a>
   </header>
 
   <main>
-    <section class="hero section-wrap" id="start">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-line"></span> POZNAJ WYJĄTKOWEGO BOHATERA</p>
-        <h1>To jest <em>Fred.</em><br>Po prostu Fred.</h1>
-        <p class="hero-description">Mały kawałek internetu poświęcony komuś, kto zdecydowanie zasługuje na własną stronę.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#o-fredzie">Poznaj Freda <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-down"/></svg></span></a>
-          <a class="text-link" href="#galeria">Przejdź do galerii <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></span></a>
-        </div>
-        
-      </div>
-      <div class="hero-visual">
-        <div class="hero-image-frame">
-          <img src="fred-1.jpg" alt="Fred — pluszowa wydra patrząca prosto w obiektyw" decoding="async" fetchpriority="high">
 
-        </div>
-        <div class="floating-sticker sticker-top"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-star"/></svg> <span>Sigemka</span></div>
-        <div class="floating-sticker sticker-bottom">FRED FAN CLUB <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></span></div>
-        <div class="hero-orbit" aria-hidden="true"></div>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="start">
+      <div class="hero-bg-orbs" aria-hidden="true">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
       </div>
-      <div class="scroll-indicator"><span></span> PRZEWIŃ NIŻEJ</div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Poznaj wyjątkowego bohatera</p>
+          <h1 class="hero-title">To jest <em>Fred.</em><br>Po prostu Fred.</h1>
+          <p class="hero-description">Mały kawałek internetu poświęcony komuś, kto zdecydowanie zasługuje na własną stronę. Legenda IIILO w Koninie - z Goliny, przez szkolne korytarze, po cały świat.</p>
+          <div class="hero-actions">
+            <a class="button button-primary magnetic" href="#o-fredzie">Poznaj Freda <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-down"/></svg></span></a>
+            <a class="text-link" href="#lekcje">Lekcje z Fredem <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></span></a>
+          </div>
+          <div class="hero-tags">
+            <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg> Golina</span>
+            <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-home"/></svg> III LO Konin</span>
+            <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plane"/></svg> Podróże</span>
+            <span class="hero-tag-new"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bell"/></svg> Lekcje wkrótce</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-frame">
+            <img src="fred-1.jpg" alt="Fred - pluszowa wydra patrząca prosto w obiektyw" decoding="async" fetchpriority="high">
+            <span class="hero-photo-label">FRED / 2026</span>
+          </div>
+          <div class="floating-sticker sticker-top"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-star"/></svg> <span>Sigemka</span></div>
+          <div class="floating-sticker sticker-bottom">FRED FAN CLUB <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></span></div>
+          <div class="hero-orbit" aria-hidden="true"></div>
+          <div class="hero-orbit hero-orbit-2" aria-hidden="true"></div>
+          <div class="hero-orbit hero-orbit-3" aria-hidden="true"></div>
+        </div>
+      </div>
+      <div class="scroll-indicator"><span></span> Przewiń niżej</div>
     </section>
 
+    <!-- ===== MARQUEE 1 ===== -->
+    <div class="marquee-strip marquee-dark" aria-hidden="true">
+      <div class="marquee-track">
+        <span>FRED • LEGENDA IIILO • SIGEMKA • KONIN • GOLINA • RYCHWAŁ • FRED • LEGENDA IIILO • SIGEMKA • KONIN • GOLINA • RYCHWAŁ •</span>
+        <span>FRED • LEGENDA IIILO • SIGEMKA • KONIN • GOLINA • RYCHWAŁ • FRED • LEGENDA IIILO • SIGEMKA • KONIN • GOLINA • RYCHWAŁ •</span>
+      </div>
+    </div>
+
+    <!-- ===== 01 / O FREDZIE ===== -->
     <section class="about section-wrap" id="o-fredzie">
-      <div class="section-kicker reveal">01 / KILKA SŁÓW O NIM</div>
+      <div class="section-kicker reveal">01 / Kilka słów o nim</div>
       <div class="about-grid">
-        <div class="about-heading reveal"><h2>Nie da się go<br>pomylić z <em>nikim.</em></h2><span class="decorative-star"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></span></div>
+        <div class="about-heading reveal">
+          <h2>Nie da się go<br>pomylić z <em>nikim.</em></h2>
+          <span class="decorative-star rotating"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></span>
+        </div>
         <div class="about-copy reveal">
-          <p class="lead">Fred - Legenda IIILO, która zmieniła historię tej szkoły na zawsze </p>
-          <p>Fred. Zwierzątko klasy 1C, który jednak szybko stał się popularny wśród nauczycieli i uczniów w całej szkole.</p>
+          <p class="lead">Fred - Legenda IIILO, która zmieniła historię tej szkoły na zawsze.</p>
+          <p>Zwierzak klasy 1C, który szybko stał się popularny wśród nauczycieli i uczniów w całej szkole. Jego historia zaczyna się we wrześniu 2026 roku - od pierwszego spotkania z nauczycielami, przez legendarny długi weekend w szkole, aż po wielką trasę po świecie.</p>
+          <p>Pochodzi z Goliny, ale serce bije mu w Koninie. To tu, w murach III Liceum Ogólnokształcącego, spędza najwięcej czasu - i to właśnie tu zdobył status ikony.</p>
+          <p>Jego rodzicem jest <strong>Big Fred</strong> - mama i tata w jednym. Podwójna dawka miłości, podwójna dawka charakteru.</p>
+          <p><strong>Fan club Freda liczy dziś 30 osób</strong> - całą klasę 1C oraz kilku super nauczycieli. Kto raz pozna Freda, ten zostaje na zawsze.</p>
           <a class="underlined-link" href="#ciekawostki">Poznaj kilka szczegółów <span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-right"/></svg></span></a>
         </div>
       </div>
@@ -76,50 +132,384 @@
       </div>
     </section>
 
+    <!-- ===== 02 / LICZBY ===== -->
+    <section class="numbers" id="liczby">
+      <div class="section-wrap">
+        <div class="section-kicker reveal">02 / Liczby, które mówią same za siebie</div>
+        <div class="numbers-grid reveal-stagger">
+          <div class="number-card">
+            <strong class="counter" data-target="50" data-suffix="+">0</strong>
+            <span>zdjęć w archiwum fan clubu</span>
+          </div>
+          <div class="number-card">
+            <strong class="counter" data-target="30" data-suffix="">0</strong>
+            <span>członków fan clubu</span>
+          </div>
+          <div class="number-card">
+            <strong class="counter" data-target="3" data-suffix="">0</strong>
+            <span>miejscowości na trasie Freda</span>
+          </div>
+          <div class="number-card">
+            <strong class="counter" data-target="100" data-suffix="%">0</strong>
+            <span>pozytywnej energii każdego dnia</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 03 / GALERIA ===== -->
     <section class="gallery-section" id="galeria">
       <div class="section-wrap">
         <div class="gallery-top">
-          <div class="reveal"><div class="section-kicker">02 / GALERIA WSPOMNIEŃ</div><h2>Fred w <em>obiektywie.</em></h2></div>
-          <p class="gallery-intro reveal">Kilka kadrów, kilka historii. Kliknij zdjęcie, aby zobaczyć je w większym formacie.</p>
-        </div>
-        <div class="gallery-grid">
-          <button class="gallery-card gallery-large reveal" aria-label="Powiększ zdjęcie 1">
-            <img src="fred-2.jpg" alt="Fred w lustrze" style="object-position:50% 12%" loading="lazy" decoding="async"><span class="photo-label">01 / DUET</span><span class="zoom-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></span>
-          </button>
-          <button class="gallery-card reveal" aria-label="Powiększ zdjęcie 2">
-            <img src="fred-3.jpg" alt="Codzienna seria push-up'ów" style="object-position:50% 22%" loading="lazy" decoding="async"><span class="photo-label">02 / NA DRĄŻKU</span><span class="zoom-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></span>
-          </button>
-          <button class="gallery-card reveal" aria-label="Powiększ zdjęcie 3">
-            <img src="fred-4.jpg" alt="Fred na siłce" style="object-position:50% 44%" loading="lazy" decoding="async"><span class="photo-label">03 / SIŁOWNIA</span><span class="zoom-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></span>
-          </button>
-          <button class="gallery-card reveal" aria-label="Powiększ zdjęcie 4">
-            <img src="fred-5.jpg" alt="Fred po siłce" style="object-position:50% 56%" loading="lazy" decoding="async"><span class="photo-label">04 / NA KÓŁKACH</span><span class="zoom-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></span>
-          </button>
-          <button class="gallery-card reveal" aria-label="Powiększ zdjęcie 5">
-            <img src="fred-6.jpg" alt="Fred koduje" style="object-position:50% 40%" loading="lazy" decoding="async"><span class="photo-label">05 / KODOWANIE</span><span class="zoom-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></span>
-          </button>
+          <div class="reveal">
+            <div class="section-kicker">03 / Galeria wspomnień</div>
+            <h2>Fred w <em>obiektywie.</em></h2>
+          </div>
+          <p class="gallery-intro reveal">Nieskończona liczba kadrów, nieskończona liczba historii. Kliknij zdjęcie, aby zobaczyć je w większym formacie - a nowe pojawiają się bez końca.</p>
         </div>
 
+        <div class="gallery-grid reveal-stagger">
+          <button class="gallery-card gallery-featured tilt" aria-label="Powiększ zdjęcie 1">
+            <img src="fred-1.jpg" alt="Fred - portret" loading="lazy" decoding="async">
+            <span class="photo-label">01 / Portret</span>
+            <span class="zoom-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></span>
+          </button>
+          <button class="gallery-card tilt" aria-label="Powiększ zdjęcie 2">
+            <img src="fred-2.jpg" alt="Fred w lustrze" loading="lazy" decoding="async">
+            <span class="photo-label">02 / Duet</span>
+            <span class="zoom-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></span>
+          </button>
+          <button class="gallery-card tilt" aria-label="Powiększ zdjęcie 3">
+            <img src="fred-3.jpg" alt="Codzienna seria push-upów" loading="lazy" decoding="async">
+            <span class="photo-label">03 / Na drążku</span>
+            <span class="zoom-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></span>
+          </button>
+          <button class="gallery-card tilt" aria-label="Powiększ zdjęcie 4">
+            <img src="fred-4.jpg" alt="Fred na siłce" loading="lazy" decoding="async">
+            <span class="photo-label">04 / Siłownia</span>
+            <span class="zoom-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></span>
+          </button>
+          <button class="gallery-card tilt" aria-label="Powiększ zdjęcie 5">
+            <img src="fred-5.jpg" alt="Fred po siłce" loading="lazy" decoding="async">
+            <span class="photo-label">05 / Na kółkach</span>
+            <span class="zoom-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></span>
+          </button>
+          <button class="gallery-card tilt" aria-label="Powiększ zdjęcie 6">
+            <img src="fred-6.jpg" alt="Fred koduje" loading="lazy" decoding="async">
+            <span class="photo-label">06 / Kodowanie</span>
+            <span class="zoom-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></span>
+          </button>
+          <button class="gallery-card tilt" aria-label="Powiększ zdjęcie 7">
+            <img src="fred-7.jpg" alt="Fred - siódme zdjęcie" loading="lazy" decoding="async">
+            <span class="photo-label">07 / Gdzieś wysoko w klasie</span>
+            <span class="zoom-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></span>
+          </button>
+          <button class="gallery-card tilt" aria-label="Powiększ zdjęcie 8">
+            <img src="fred-8.jpg" alt="Fred - ósme zdjęcie" loading="lazy" decoding="async">
+            <span class="photo-label">08 / Skok na bungee na matmie</span>
+            <span class="zoom-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></span>
+          </button>
+          <button class="gallery-card tilt" aria-label="Powiększ zdjęcie 9">
+            <img src="fred-9.jpg" alt="Fred - dziewiąte zdjęcie" loading="lazy" decoding="async">
+            <span class="photo-label">09 / Gdzieś wysoko na angielskim</span>
+            <span class="zoom-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></span>
+          </button>
+          <button class="gallery-card gallery-wide tilt" aria-label="Powiększ zdjęcie 10">
+            <img src="fred-10.jpg" alt="Fred - dziesiąte zdjęcie" loading="lazy" decoding="async">
+            <span class="photo-label">10 / Na informatyce</span>
+            <span class="zoom-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></span>
+          </button>
+          <button class="gallery-card tilt" aria-label="Powiększ zdjęcie 11">
+            <img src="fred-11.jpg" alt="Fred - jedenaste zdjęcie" loading="lazy" decoding="async">
+            <span class="photo-label">11 / Big Fred </span>
+            <span class="zoom-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></span>
+          </button>
+          <button class="gallery-card tilt" aria-label="Powiększ zdjęcie 12">
+            <img src="fred-12.jpg" alt="Fred - dwunaste zdjęcie" loading="lazy" decoding="async">
+            <span class="photo-label">12 / Dwanaście</span>
+            <span class="zoom-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></span>
+          </button>
+          <a class="gallery-cta" href="#start">
+            <span class="gallery-cta-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-camera"/></svg></span>
+            <div class="gallery-cta-body">
+              <h3>Nieskończoność zdjęć</h3>
+              <p>Masz kadr Freda? Dorzuć go do archiwum - każdy się liczy, a miejsca nigdy nie brakuje.</p>
+            </div>
+            <span class="gallery-cta-arrow"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></span>
+          </a>
+          <div class="gallery-soon">
+            <span class="gallery-soon-badge"><svg class="icon infinity-icon" aria-hidden="true" focusable="false"><use href="#i-infinity"/></svg> Nieskończoność</span>
+            <p>Kolejne kadry już w drodze - zawsze coś nowego.</p>
+            <span class="gallery-soon-dots"><i></i><i></i><i></i></span>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- ===== MARQUEE 2 / PHOTO STRIP ===== -->
+    <div class="marquee-strip marquee-photos" aria-hidden="true">
+      <div class="marquee-track marquee-track-slow">
+        <span class="photo-chip"><img src="fred-1.jpg" alt="" loading="lazy"></span>
+        <span class="photo-chip"><img src="fred-2.jpg" alt="" loading="lazy"></span>
+        <span class="photo-chip"><img src="fred-3.jpg" alt="" loading="lazy"></span>
+        <span class="photo-chip"><img src="fred-4.jpg" alt="" loading="lazy"></span>
+        <span class="photo-chip"><img src="fred-5.jpg" alt="" loading="lazy"></span>
+        <span class="photo-chip"><img src="fred-6.jpg" alt="" loading="lazy"></span>
+        <span class="photo-chip"><img src="fred-7.jpg" alt="" loading="lazy"></span>
+        <span class="photo-chip"><img src="fred-8.jpg" alt="" loading="lazy"></span>
+        <span class="photo-chip"><img src="fred-9.jpg" alt="" loading="lazy"></span>
+        <span class="photo-chip"><img src="fred-10.jpg" alt="" loading="lazy"></span>
+        <span class="photo-chip"><img src="fred-11.jpg" alt="" loading="lazy"></span>
+        <span class="photo-chip"><img src="fred-12.jpg" alt="" loading="lazy"></span>
+        <span class="photo-chip"><img src="fred-1.jpg" alt="" loading="lazy"></span>
+        <span class="photo-chip"><img src="fred-2.jpg" alt="" loading="lazy"></span>
+        <span class="photo-chip"><img src="fred-3.jpg" alt="" loading="lazy"></span>
+        <span class="photo-chip"><img src="fred-4.jpg" alt="" loading="lazy"></span>
+        <span class="photo-chip"><img src="fred-5.jpg" alt="" loading="lazy"></span>
+        <span class="photo-chip"><img src="fred-6.jpg" alt="" loading="lazy"></span>
+        <span class="photo-chip"><img src="fred-7.jpg" alt="" loading="lazy"></span>
+        <span class="photo-chip"><img src="fred-8.jpg" alt="" loading="lazy"></span>
+        <span class="photo-chip"><img src="fred-9.jpg" alt="" loading="lazy"></span>
+        <span class="photo-chip"><img src="fred-10.jpg" alt="" loading="lazy"></span>
+        <span class="photo-chip"><img src="fred-11.jpg" alt="" loading="lazy"></span>
+        <span class="photo-chip"><img src="fred-12.jpg" alt="" loading="lazy"></span>
+      </div>
+    </div>
+
+    <!-- ===== 04 / CIEKAWOSTKI ===== -->
     <section class="facts section-wrap" id="ciekawostki">
-      <div class="facts-heading reveal"><div class="section-kicker">03 / MAŁE RZECZY, DUŻY CHARAKTER</div><h2>Warto wiedzieć<br><em>o Fredzie.</em></h2></div>
+      <div class="facts-heading reveal">
+        <div class="section-kicker">04 / Małe rzeczy, duży charakter</div>
+        <h2>Warto wiedzieć<br><em>o Fredzie.</em></h2>
+      </div>
       <div class="fact-list">
-        <article class="fact-item reveal"><span>01</span><div><h3>Jego ulubiony przedmiot</h3><p>Język niemiecki. Fred kocha ten przedmiot tak bardzo, że zdecydował się zamieszkać na długi weekend w sali od niemieckiego</p></div><b><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></b></article>
-        <article class="fact-item reveal"><span>02</span><div><h3>Ma rodzinę</h3><p>A dokłaniej rodzice 2 w 1.</p></div><b><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></b></article>
-        <article class="fact-item reveal"><span>03</span><div><h3>Co go wyróżnia?</h3><p>Jest jedyną wydrą, która żyje na lądzie (bo chyba wydry żyją w wodzie też jak coś)</p></div><b><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></b></article>
-        <article class="fact-item reveal"><span>04</span><div><h3>Ulubiona piosenka</h3><p><a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch%3Fv%3DVSmje_g4kdk&ved=2ahUKEwizhpywg_OXAxXiUFUIHValN2oQwqsBegQIFhAB&usg=AOvVaw3DTFYz4KrtKw4tmW99Dx-D" target="_blank">Red Alabaster (intro) by Joung Multi</a>Red Alabaster (intro), Power Up by Young Multi, oraz The return by ShadowOfIntent</p></div><b><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></b></article>
+        <article class="fact-item reveal">
+          <span>01</span>
+          <div><h3>Jego ulubiony przedmiot</h3><p>Język niemiecki. Fred kocha ten przedmiot tak bardzo, że zdecydował się zamieszkać na długi weekend w sali od niemieckiego (30.10 - 02.11.2026).</p></div>
+          <b><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></b>
+        </article>
+        <article class="fact-item reveal">
+          <span>02</span>
+          <div><h3>Skąd pochodzi?</h3><p>Z Goliny. Małe miasteczko pod Koninem, wielki charakter - to cały Fred w pigułce.</p></div>
+          <b><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></b>
+        </article>
+        <article class="fact-item reveal">
+          <span>03</span>
+          <div><h3>Rodzina</h3><p><strong>Big Fred</strong> - mama i tata w jednym. Podwójna dawka miłości, podwójna dawka charakteru. Nic dziwnego, że Fred wyszedł na taką ikonę.</p></div>
+          <b><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-heart"/></svg></b>
+        </article>
+        <article class="fact-item reveal">
+          <span>04</span>
+          <div><h3>Ulubione miejsce</h3><p>III Liceum Ogólnokształcące w Koninie. Tu czuje się jak w domu - i tu spędza każdą wolną chwilę.</p></div>
+          <b><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></b>
+        </article>
+        <article class="fact-item reveal">
+          <span>05</span>
+          <div><h3>Fan club w komplecie</h3><p>Cała klasa 1C oraz kilku super nauczycieli. Razem 30 osób i wciąż rośnie.</p></div>
+          <b><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></b>
+        </article>
+        <article class="fact-item reveal">
+          <span>06</span>
+          <div><h3>Pierwsze wakacje</h3><p>3-5 listopada 2026 - Rychwał. Krótki wypad, wielkie wspomnienia. Początek wielkiej trasy.</p></div>
+          <b><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></b>
+        </article>
+        <article class="fact-item reveal">
+          <span>07</span>
+          <div><h3>Ulubiona piosenka</h3><p><a href="https://www.youtube.com/watch?v=VSmje_g4kdk" target="_blank" rel="noopener noreferrer">Red Alabaster (intro) by Young Multi</a>, Power Up by Young Multi oraz The Return by ShadowOfIntent.</p></div>
+          <b><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-ne"/></svg></b>
+        </article>
       </div>
     </section>
 
-    <section class="closing section-wrap reveal">
-      <span class="closing-star"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></span><p>TO DOPIERO POCZĄTEK</p><h2>Więcej Freda.<br><em>Więcej wspomnień.</em></h2><a class="button button-light" href="#start">Wróć na górę <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-up"/></svg></a>
+    <!-- ===== 05 / OSIĄGNIĘCIA ===== -->
+    <section class="achievements" id="osiagniecia">
+      <div class="section-wrap">
+        <div class="achievements-heading reveal">
+          <div class="section-kicker">05 / Historia, która się pisze</div>
+          <h2>Osiągnięcia <em>Freda.</em></h2>
+          <p class="achievements-lead">Od pierwszego dnia w IIILO po status legendy. Oto najważniejsze momenty w karierze Freda - z dokładnymi datami.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <span class="timeline-date">Wrzesień 2026</span>
+            <h3>Debiut w IIILO</h3>
+            <p>Fred przybywa do III Liceum Ogólnokształcącego w Koninie. To tu poznaje swoich pierwszych nauczycieli i błyskawicznie zdobywa sympatię całej szkoły.</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <span class="timeline-date">30.10 - 02.11.2026</span>
+            <h3>Legendarny długi weekend</h3>
+            <p>Fred zostaje w szkole na długi weekend. Główna kwatera? Sala od niemieckiego. Trzy dni, które przeszły do historii IIILO.</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <span class="timeline-date">Listopad 2026</span>
+            <h3>Wielka trasa się zaczyna</h3>
+            <p>Po długim weekendzie Fred pakuje manatki i rusza zwiedzać świat. Pierwszy przystanek? Rychwał - i to już 3 listopada.</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <span class="timeline-date">03.11 - 05.11.2026</span>
+            <h3>Wakacje w Rychwale</h3>
+            <p>Trzy dni pełnego relaksu poza Koninem. Krótki wypad, ale wielkie wspomnienia - i pierwszy wpis w paszporcie podróżnika.</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <span class="timeline-date">Ciąg dalszy nastąpi</span>
+            <h3>Świat czeka</h3>
+            <p>Kolejne przystanki dopiero przed nim. Dokąd zmierza Fred? Tego nie wie nawet on sam - ale my chętnie będziemy kibicować.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 06 / PODRÓŻE ===== -->
+    <section class="journey section-wrap" id="podroze">
+      <div class="section-kicker reveal">06 / Ślady Freda na mapie</div>
+      <h2 class="reveal">Trasa <em>podróży.</em></h2>
+      <p class="journey-intro reveal">Każde miejsce coś znaczy. Oto droga Freda - od rodzinnych stron, przez szkolne korytarze, po pierwsze wakacyjne wypady.</p>
+
+      <div class="journey-grid reveal-stagger">
+        <article class="journey-card">
+          <span class="journey-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg></span>
+          <span class="journey-index">01 / Pochodzenie</span>
+          <h3>Golina</h3>
+          <p>Małe miasteczko pod Koninem, wielki charakter. Tu zaczyna się historia Freda.</p>
+        </article>
+        <article class="journey-card">
+          <span class="journey-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-home"/></svg></span>
+          <span class="journey-index">02 / Dom</span>
+          <h3>III LO Konin</h3>
+          <p>Serce Freda bije w murach III Liceum. Tu spędza najwięcej czasu i tu czuje się najlepiej.</p>
+        </article>
+        <article class="journey-card">
+          <span class="journey-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plane"/></svg></span>
+          <span class="journey-index">03 / Wakacje</span>
+          <h3>Rychwał</h3>
+          <p>3-5 listopada 2026 - pierwsze wakacje poza Koninem. Krótki wypad, wielkie wspomnienia.</p>
+        </article>
+        <article class="journey-card journey-card-future">
+          <span class="journey-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-globe"/></svg></span>
+          <span class="journey-index">04 / Następny przystanek</span>
+          <h3>Świat</h3>
+          <p>Trasa wciąż się pisze. Kolejne miejsca dopiero przed nim - i przed nami.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== 07 / LEKCJE ===== -->
+    <section class="lessons" id="lekcje">
+      <div class="section-wrap">
+        <div class="lessons-head">
+          <div class="section-kicker reveal">07 / Nadchodzące lekcje</div>
+          <h2 class="reveal">Fred uczy.<br><em>Wkrótce.</em></h2>
+          <p class="lessons-lead reveal">Fred postanowił podzielić się wiedzą. Już niedługo na stronie pojawią się <strong>darmowe lekcje</strong> prowadzone przez Freda. Co to będzie, z czego i jak to będzie wyglądać - tego jeszcze nie wiadomo. Śledźcie stronę, żeby nie przegapić startu.</p>
+        </div>
+
+        <div class="lessons-info reveal">
+          <span class="lessons-info-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bell"/></svg></span>
+          <div class="lessons-info-text">
+            <h3>Szczegóły już wkrótce</h3>
+            <p>Fred dopiero planuje pierwsze lekcje - dokładne daty, forma, tematy i godziny pojawią się na stronie, gdy wszystko będzie dopięte. Co to będzie i jak to będzie wyglądać - tego jeszcze nie wiadomo. Śledźcie stronę, żeby nie przegapić startu.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 08 / FAQ ===== -->
+    <section class="faq section-wrap" id="faq">
+      <div class="section-kicker reveal">08 / Najczęstsze pytania</div>
+      <h2 class="reveal">Masz pytanie <em>o Freda?</em></h2>
+      <div class="faq-list reveal">
+        <details class="faq-item">
+          <summary>Czy Fred jest prawdziwą wydrą?<svg class="icon faq-icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary>
+          <div class="faq-answer"><p>To pluszowa wydra o niezwykle bogatej osobowości. W praktyce funkcjonuje jako pełnoprawny członek społeczności szkolnej - z prawem głosu na nieformalnych zebraniach.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Gdzie mogę spotkać Freda?<svg class="icon faq-icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary>
+          <div class="faq-answer"><p>Najczęściej w III LO w Koninie - w okolicach sali 1C lub na korytarzach. Bywa też w podróży, więc warto śledzić jego trasę w sekcji Podróże.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Skąd pochodzi Fred?<svg class="icon faq-icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary>
+          <div class="faq-answer"><p>Z Goliny - małego miasteczka pod Koninem. Ale serce zostawił w III LO, gdzie spędza najwięcej czasu.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Kto jest rodzicem Freda?<svg class="icon faq-icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary>
+          <div class="faq-answer"><p>Big Fred - mama i tata w jednym. Podwójna dawka miłości i podwójna dawka charakteru. Wszystko się zgadza.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Dlaczego został w szkole na długi weekend?<svg class="icon faq-icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary>
+          <div class="faq-answer"><p>Powody pozostają tajemnicą, ale faktem jest, że od 30 października do 2 listopada 2026 roku Fred zamieszkał w sali od niemieckiego. Niektórzy twierdzą, że to z miłości do języka.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Gdzie był na pierwszych wakacjach?<svg class="icon faq-icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary>
+          <div class="faq-answer"><p>W Rychwale, w dniach 3-5 listopada 2026. Krótki wypad, ale pierwszy krok w wielką trasę po świecie.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Kto należy do Fred Fan Club?<svg class="icon faq-icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary>
+          <div class="faq-answer"><p>Dziś to 30 osób: cała klasa 1C plus pan od matmy, pan od angielskiego, pani od niemieckiego i pani od rysunku technicznego. Formalności są minimalne - liczy się serce i dobre nastawienie, a miejsca w klubie nigdy nie brakuje.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Kiedy ruszają lekcje z Fredem?<svg class="icon faq-icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary>
+          <div class="faq-answer"><p>Dokładna data nie jest jeszcze znana - Fred dopiero planuje pierwsze zajęcia. Co to będzie i jak to będzie wyglądać, okaże się wkrótce. Lekcje będą w pełni darmowe.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Czy zdjęć Freda jest skończona liczba?<svg class="icon faq-icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></summary>
+          <div class="faq-answer"><p>Zdecydowanie nie. Galeria rośnie z każdym dniem, a pasek zdjęć w tle nigdy się nie kończy. Wrzucaj swoje kadry - archiwum Freda jest nieskończone.</p></div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ===== CLOSING ===== -->
+    <section class="closing reveal">
+      <span class="closing-star rotating"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-spark"/></svg></span>
+      <p>To dopiero początek</p>
+      <h2>Więcej Freda.<br><em>Więcej wspomnień.</em></h2>
+      <a class="button button-light magnetic" href="#start">Wróć na górę <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-up"/></svg></a>
     </section>
   </main>
 
-  <footer class="site-footer"><a class="brand" href="#start"><span class="brand-mark">F</span><span>fred<span class="brand-dot">.</span></span></a><p>Stworzone z myślą o Fredzie.</p><span>© <span id="year"></span> FRED FAN CLUB</span></footer>
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="#start"><span class="brand-mark">F</span><span class="brand-text">fred<span class="brand-dot">.</span></span></a>
+        <p>Stworzone z myślą o Fredzie. Mały świat wielkiej osobowości.</p>
+        <p class="footer-origin">Z Goliny, przez Konin, po cały świat.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Nawigacja</h4>
+        <a href="#o-fredzie">O Fredzie</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#ciekawostki">Ciekawostki</a>
+        <a href="#osiagniecia">Osiągnięcia</a>
+      </div>
+      <div class="footer-col">
+        <h4>Informacje</h4>
+        <a href="#podroze">Podróże</a>
+        <a href="#lekcje">Lekcje</a>
+        <a href="#faq">FAQ</a>
+        <a href="#liczby">Liczby</a>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <p>Fred Fan Club<br>III LO Konin<br>Polska</p>
+        <span class="footer-tag">#fredlegend</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> FRED FAN CLUB</span>
+      <span>Stworzone z ❤ przez Kacpra Biadasiewicza i "Olek Maciej" z klasy 1C1</span>
+    </div>
+  </footer>
 
-  <dialog class="lightbox" aria-label="Powiększone zdjęcie"><button class="lightbox-close" aria-label="Zamknij">×</button><img src="" alt="Powiększone zdjęcie Freda"></dialog>
+  <button class="back-to-top" id="backToTop" aria-label="Wróć na górę">
+    <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-up"/></svg>
+  </button>
+
+  <dialog class="lightbox" aria-label="Powiększone zdjęcie">
+    <button class="lightbox-close" aria-label="Zamknij">×</button>
+    <img src="" alt="Powiększone zdjęcie Freda">
+  </dialog>
 </body>
 </html>
