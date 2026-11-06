@@ -1650,3 +1650,48 @@ a:focus-visible,button:focus-visible,summary:focus-visible{
     touch-action: manipulation;
   }
 }
+
+
+/* ============ MOBILE CONTENT GUTTERS ============ */
+/* Większy, równy odstęp tekstu od krawędzi ekranu. */
+@media (max-width: 600px) {
+  .section-wrap {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .hero-inner {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .closing {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .site-footer {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .site-header {
+    padding-left: max(24px, env(safe-area-inset-left));
+    padding-right: max(24px, env(safe-area-inset-right));
+  }
+}
+
+@media (max-width: 380px) {
+  .section-wrap,
+  .hero-inner,
+  .closing,
+  .site-footer {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .site-header {
+    padding-left: max(20px, env(safe-area-inset-left));
+    padding-right: max(20px, env(safe-area-inset-right));
+  }
+}
