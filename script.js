@@ -124,6 +124,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   closeButton?.addEventListener("click", closeLightbox);
+  lightbox?.addEventListener("close", () => {
+    document.body.style.overflow = "";
+  });
   lightbox?.addEventListener("click", (event) => {
     if (event.target === lightbox) closeLightbox();
   });
@@ -133,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* LICZNIKI */
   const counters = document.querySelectorAll(".counter");
-  if (counters.length && "IntersectionObserver" in window) {
+  if (counters.length && "IntersectionObserver" in window && !prefersReduced) {
     const animateCounter = (el) => {
       const target = parseInt(el.dataset.target, 10) || 0;
       const suffix = el.dataset.suffix || "";
@@ -160,6 +163,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }, { threshold: 0.4 });
 
     counters.forEach((c) => counterObserver.observe(c));
+  } else {
+    counters.forEach((el) => {
+      const target = Number.parseInt(el.dataset.target, 10);
+      const suffix = el.dataset.suffix || "";
+      el.textContent = (Number.isFinite(target) ? target : 0) + suffix;
+    });
   }
 
   /* PARALLAX */
