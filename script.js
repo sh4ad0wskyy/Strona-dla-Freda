@@ -61,8 +61,18 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("mouseenter", () => { cursorDot.style.opacity = ".55"; });
 
     document.querySelectorAll("a, button, summary").forEach((el) => {
-      el.addEventListener("mouseenter", () => { cursorDot.style.transform += " scale(2)"; cursorDot.style.opacity = ".35"; });
-      el.addEventListener("mouseleave", () => { cursorDot.style.opacity = ".55"; });
+      el.addEventListener("mouseenter", () => {
+        cursorDot.style.width = "16px";
+        cursorDot.style.height = "16px";
+        cursorDot.style.margin = "-8px 0 0 -8px";
+        cursorDot.style.opacity = ".35";
+      });
+      el.addEventListener("mouseleave", () => {
+        cursorDot.style.width = "10px";
+        cursorDot.style.height = "10px";
+        cursorDot.style.margin = "-5px 0 0 -5px";
+        cursorDot.style.opacity = ".55";
+      });
     });
   }
 
