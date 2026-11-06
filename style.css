@@ -1481,7 +1481,6 @@ a:focus-visible,button:focus-visible,summary:focus-visible{
   .navigation {
     top: 64px;
     max-height: 0;
-    max-height: min(0px, 0px);
     overflow-y: auto;
     overscroll-behavior: contain;
     padding-bottom: env(safe-area-inset-bottom);
