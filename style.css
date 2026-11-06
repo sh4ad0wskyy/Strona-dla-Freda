@@ -486,7 +486,7 @@ em{color:var(--clay);font-style:italic;font-weight:500}
   display:inline-flex;align-items:center;gap:44px;
 }
 .marquee-track span::after{
-  content:"✳";color:var(--clay);
+  content:"✳︎";color:var(--clay);
   font-style:normal;font-size:18px;
   animation:slow-rotate 8s linear infinite;
   display:inline-block;
@@ -1694,4 +1694,41 @@ a:focus-visible,button:focus-visible,summary:focus-visible{
     padding-left: max(20px, env(safe-area-inset-left));
     padding-right: max(20px, env(safe-area-inset-right));
   }
+}
+
+
+/* ============ FINAL MOBILE GUTTERS ============ */
+/* Keep every main text column away from the physical screen edge. */
+@media (max-width: 600px) {
+  .section-wrap,
+  .hero-inner {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
+
+  .closing,
+  .site-footer {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
+
+  .site-header {
+    padding-left: max(24px, env(safe-area-inset-left)) !important;
+    padding-right: max(24px, env(safe-area-inset-right)) !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .section-wrap,
+  .hero-inner,
+  .closing,
+  .site-footer {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+}
+
+/* Prefer monochrome text glyphs over Apple Color Emoji for decorative symbols. */
+.marquee-track span::after {
+  content: "✳︎";
 }
